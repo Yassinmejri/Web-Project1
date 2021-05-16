@@ -191,14 +191,14 @@ h1, h2, h3, h4, h5, h6 {
 .product-top img
 {
 	width: 100%;
-	height: 300px;
+	height: 200px;
 }
 .overlay-right
 {
 	display: block;
 	opacity: 0;
 	position: absolute;
-	top: 10%;
+	top: 1%;
 	margin-left: 0;
 	width: 70px;
 	margin-bottom: 5%;
@@ -493,7 +493,7 @@ form input.qty {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	color: #555;
-	
+	align-items: center ;
 }
 
 h1
@@ -840,5 +840,67 @@ body#checkout-page #site-info {
 }
 
     
+
+.xyz {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.xyz a {
+    height: 95px;
+    width: 95px;
+    background-color: #f5f6fa;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+    line-height: 110px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fab{
+            line-height: 70px;
+            align-items: center;
+
+        }
+.fa-instagram{
+            color: #e84393;
+        }
+.fa-youtube{
+            color: #e84118;
+
+        }
+.fa-twitter{
+            color: #0097e6;
+        }
+.fa-linkedin-in{
+            color: #0097e6;
+        }
+.xyz a:hover .fab{
+            transform: scale(1.5);
+            color: #f5f6fa;
+        }
+.xyz a:before{
+            content: "";
+            width: 120%;
+            height: 120%;
+            position: absolute;
+            top: 90%;
+            left: -50%;
+            background-color: #00a8ff;
+            transform: rotate(60deg); 
+
+        }
+.xyz a:hover:before{
+            animation: socialicons 0.8s 1;
+        }
+@keyframes socialicons{
+            0%{top: 90%; left: -50%;}
+            50%{top: -60%; left: -10%;}
+            100%{top: -10%; left: -10%;}
+
 
 
