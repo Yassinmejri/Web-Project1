@@ -120,7 +120,76 @@ $duration: 250ms;
 	height: 240px;;
 }
 
+/*-------------------------------*/
 
+#abc{
+  width:300px;
+  padding: 40px;
+  position: relative;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-5%);
+  background: #F1F1F1;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 15px 15px;
+}
+#abc h1{
+  color: black;
+  font-size: 20px;
+
+}
+#abc input[type="text"],#abc input[type="password"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: black;
+  font-size: 16px;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+#abc input[type="text"]:focus,#abc input[type="password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+#abc input[type="button"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 25px;
+  outline: none;
+  color: #848484;
+  border-radius: 24px;
+  transition: 0.25s;
+  font-size: 17px;
+  font-family: 'Libre Baskerville', serif;
+}
+#abc a {
+  border: 0;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 25px;
+  outline: none;
+  color: #848484;
+  border-radius: 24px;
+  transition: 0.25s;
+  font-size: 17px;
+  font-family: 'Libre Baskerville', serif;
+}
+#abc input[type="button"]:hover,#abc a:hover {
+  background: #2ecc71;
+}
 
 /*-----product images------*/
 .featured-categories
@@ -901,6 +970,3 @@ body#checkout-page #site-info {
             0%{top: 90%; left: -50%;}
             50%{top: -60%; left: -10%;}
             100%{top: -10%; left: -10%;}
-
-
-

@@ -119,13 +119,42 @@
 			}
 		},
 		
-		// Displays the user's information
+		// Displays the user's information 
 		
 		displayUserDetails: function() {
 			if( this.$userDetails.length ) {
-				if( this.storage.getItem( "shipping-name" ) == null ) {
+				if (this.storage.getItem( "shipping-name" ) == null && this.storage.getItem( "billing-name" ) == null) {
+					usernamet = new Array("admin1", "admin2", "members");
+				    passwordt = new Array("1234", "0000", "yes1");
+				    emailt = new Array("yassinmejri325@gmail.com", "ufc@gmail.com", "no@gmail.com");
+				    cityt = new Array("Ezzahra", "Ezzahra", "Beja");
+				    adresst = new Array("yes", "we", "can");
+				    zipcodet = new Array("2034", "2034", "2050");
+				    countryt = new Array("Tn", "Tn", "Us");
+				    var name = usernamet[1];
+					var email = emailt[1];
+					var city = cityt[1];
+					var address = adresst[1];
+					var zip = zipcodet[1];
+					var country = countryt[1];
+					
+					var html = "<div class='detail'>";
+						html += "<h2>Billing and Shipping</h2>";
+						html += "<ul>";
+						html += "<li>" + name + "</li>";
+						html += "<li>" + email + "</li>";
+						html += "<li>" + city + "</li>";
+						html += "<li>" + address + "</li>";
+						html += "<li>" + zip + "</li>";
+						html += "<li>" + country + "</li>";
+						html += "</ul></div>";
+						
+					this.$userDetails[0].innerHTML = html;
+				}
+				else if( this.storage.getItem( "shipping-name" ) == null ) {
 					var name = this.storage.getItem( "billing-name" );
 					var email = this.storage.getItem( "billing-email" );
+					var pass = this.storage.getItem("billing-password")
 					var city = this.storage.getItem( "billing-city" );
 					var address = this.storage.getItem( "billing-address" );
 					var zip = this.storage.getItem( "billing-zip" );
@@ -146,6 +175,7 @@
 				} else {
 					var name = this.storage.getItem( "billing-name" );
 					var email = this.storage.getItem( "billing-email" );
+					var pass = this.storage.getItem("billing-password")
 					var city = this.storage.getItem( "billing-city" );
 					var address = this.storage.getItem( "billing-address" );
 					var zip = this.storage.getItem( "billing-zip" );
@@ -184,7 +214,7 @@
 				
 				}
 			}
-		},
+		}, 
 
 		// Delete a product from the shopping cart
 
@@ -644,6 +674,7 @@
 		var shop = new $.Shop( "#site" );
 	});
 
-})( jQuery );
+}
+)( jQuery );
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Checkout</title>
+<title>Sign IN</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
@@ -16,30 +16,9 @@
 
 <div id="site">
 	<div id="content">
-		<h1>Checkout</h1>
-			<table id="checkout-cart" class="shopping-cart">
-			  <thead>
-				<tr>
-					<th scope="col">Item</th>
-					<th scope="col">Qty</th>
-					<th scope="col">Price</th>
-				</tr>
-			  </thead>
-			  <tbody>
-			  
-			  </tbody>
-			</table>
-		 <div id="pricing">
-			
-			<p id="shipping">
-				<strong>Shipping</strong>: <span id="sshipping"></span>
-			</p>
-			
-			<p id="sub-total">
-				<strong>Total</strong>: <span id="stotal"></span>
-			</p>
-		 </div> 
-		 <!--<form action="order.html" method="post" id="checkout-order-form">
+		<h1>Sign IN</h1>
+		 
+		 <form action="order.html" method="post" id="checkout-order-form">
 		 	<h2>Your Details</h2>
 		 	
 		 	<fieldset id="fieldset-billing">
@@ -51,6 +30,10 @@
 		 		<div>
 		 			<label for="email">Email</label>
 		 			<input type="text" name="email" id="email" data-type="expression" data-message="Not a valid email address" />
+		 		</div>
+		 		<div>
+		 			<label for="password">Password</label>
+		 			<input type="password" name="email" id="passwrd" data-type="string" />
 		 		</div>
 		 		<div>
 		 			<label for="city">City</label>
@@ -112,17 +95,8 @@
 		 	
 		 	<p><input type="submit" id="submit-order" value="Submit" class="btn" /></p>
 		 
-		 </form> -->
+		 </form> 
 	</div>
-	<form id="abc" action="" method="GET">
-			<script type="text/javascript" src="login.js"></script>
-		 	<h1>LOGIN</h1>
-		 	<input type="text" name="userid" placeholder="Email" />
-		 	<input type="password" name="pswrd" placeholder="Password" />
-		 	<input type="button" onclick="check(form)" name="login" class="login login-submit" value="Login">
-		 	<a href="signin.html" class="button">Sign-in</a>
-		 	 
-	</form>
 </div>
 <div class="xyz">
         <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
