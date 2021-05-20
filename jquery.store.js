@@ -128,7 +128,7 @@
 				    passwordt = new Array("1234", "0000", "yes1");
 				    emailt = new Array("yassinmejri325@gmail.com", "ufc@gmail.com", "no@gmail.com");
 				    cityt = new Array("Ezzahra", "Ezzahra", "Beja");
-				    adresst = new Array("yes", "we", "can");
+				    adresst = new Array("yes", "16rue Hbibbourgiba", "can");
 				    zipcodet = new Array("2034", "2034", "2050");
 				    countryt = new Array("Tn", "Tn", "Us");
 				    var name = usernamet[1];

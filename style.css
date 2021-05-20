@@ -139,6 +139,28 @@ $duration: 250ms;
   font-size: 20px;
 
 }
+
+#fieldset-billing div input[type="text"],#fieldset-billing input[type="password"],#fieldset-shipping div input[type="text"],#fieldset-shipping input[type="password"] {
+	border: 0;
+  background: none;
+  display: 	inline-block;
+  margin: 2px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 10px 10px;
+  width: 200px;
+  outline: none;
+  color: black;
+  font-size: 16px;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+#fieldset-billing div input[type="text"]:focus,#fieldset-billing input[type="password"]:focus,#fieldset-shipping div input[type="text"]:focus,#fieldset-shipping input[type="password"]:focus {
+	  width: 280px;
+  border-color: #2ecc71;
+}
+
 #abc input[type="text"],#abc input[type="password"]{
   border: 0;
   background: none;
@@ -782,6 +804,51 @@ body#checkout-page #site-info {
 #shopping-cart-actions li {
 	display: inline-block;
 	margin-right: 1em;
+}
+
+#shopping-cart-actions li input[type="submit"]{
+box-shadow: 0 2px 2px;
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 14px 25px;
+  outline: none;
+  color: black ;
+  border-radius: 24px;
+  transition: 0.25s;
+  font-size: 17px;
+  font-family: 'Libre Baskerville', serif;
+
+}
+#shopping-cart-actions li a,#checkout-order-form p input[type="submit"],#paypal-form input[type="submit"]{
+	border: 0;
+  background: #4246FF;
+  display: block;
+  text-decoration: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #4246FF;
+  padding: 14px 25px;
+  outline: none;
+  color: white ;
+  border-radius: 24px;
+  transition: 0.25s;
+  font-size: 17px;
+  font-family: 'Libre Baskerville', serif;
+
+}
+
+#shopping-cart-actions li a:hover,#checkout-order-form p input[type="submit"]:hover,#paypal-form input[type="submit"]:hover{
+	background: none;
+	color : black ;
+
+}
+
+#shopping-cart-actions li input[type="submit"]:hover {
+  background: #4246FF;
+  color: white ;
 }
 
 #pricing {
